@@ -61,16 +61,6 @@ export const BookList: React.FC = () => {
     description: '',
   });
 
-  const onOpen = (
-    book: React.SetStateAction<{
-      id: number;
-      name: string;
-      description: string;
-    }>
-  ) => {
-    setSelectedBook(book);
-    setIsOpen(true);
-  };
 
   const onClose = () => {
     setIsOpen(false);
